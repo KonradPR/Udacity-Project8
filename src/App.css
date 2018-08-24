@@ -1,28 +1,66 @@
-.App {
+@charset "utf-8";
+/* CSS Document */
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+.listView {
+  margin-top: 0px;
+  list-style: none;
+  width: 100%;
   text-align: center;
+  padding: 0;
+  margin-bottom: 0px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.listView-element {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  border-collapse: collapse;
+  transition: all 0.2s linear;
+  font-size: 2.0em;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.listView-element:hover {
+  border-bottom: 3px solid black;
+  border-top: 3px solid black;
 }
 
-.App-title {
-  font-size: 1.5em;
+.listView-element:focus {
+  border-bottom: 3px solid black;
+  border-top: 3px solid black;
 }
 
-.App-intro {
-  font-size: large;
+.searchBar {
+  width: 100%;
+  border: none;
+  text-align: center;
+  font-size: 2.0em;
+  height: 40px;
+  border-bottom: 1px solid black;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.weatherDisplay {
+  text-align: center;
+  font-size: 2.0em;
+}
+
+.weatherDisplay-info {
+margin: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  .searchBar {
+    font-size: 1.5em;
+  }
+
+  .weatherDisplay {
+    font-size: 1.4em;
+  }
+
+  .weatherDisplay-title {
+    margin: 0px;
+  }
 }
